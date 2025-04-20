@@ -16,13 +16,25 @@
       <button type="submit">Send</button>
     </form>
 
+    <!-- Upload/Scan Bill Section -->
+<div id="scan-section">
+  <h3>📎 Scan or Upload Hotel Bill</h3>
+
+  <input type="file" id="bill-file" accept="image/*,.png,.jpg,.jpeg" capture="environment" />
+  
+  <input type="text" id="hotel-name-input" placeholder="Type hotel name (e.g., sanija)" />
+  
+  <button id="scan-button">🔍 Scan Bill</button>
+</div>
+
     <!-- Shortcut Buttons -->
 <div id="shortcuts">
   <button class="clear-btn" onclick="clearChat()">🗑️ Clear Chat</button>
 </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
