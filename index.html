@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Rate Checker 💬</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="chat-container">
+    <h2> Shivneri Fresh🏨 Hotel Rate Chat Assistant</h2>
+    <div id="messages"></div>
+
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type hotel + product name..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Shortcut Buttons -->
+<div id="shortcuts">
+  <button class="clear-btn" onclick="clearChat()">🗑️ Clear Chat</button>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="app.js"></script>
+</body>
+</html>

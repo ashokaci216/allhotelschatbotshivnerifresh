@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+#chat-container {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h2 {
+  background: #0077cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#messages {
+  flex: 1;
+  padding: 15px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 0.95rem;
+}
+
+.message {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.message.user {
+  text-align: right;
+  color: #0077cc;
+}
+
+.message.bot {
+  text-align: left;
+  color: #333;
+}
+
+#chat-form {
+  display: flex;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+  padding: 10px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#chat-form button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#chat-form button:hover {
+  background: #005fa3;
+}
+
+#shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+#shortcuts button {
+  background: #e1f3ff;
+  color: #0077cc;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#shortcuts button:hover {
+  background: #cce8ff;
+}
+
+#shortcuts .clear-btn {
+  background-color: #fff !important;
+  color: #ff0000 !important;       /* 🔴 True red */
+  border: 1px solid #ff0000 !important;
+  font-weight: bold !important;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#shortcuts .clear-btn:hover {
+  background-color: #ffe5e5 !important;
+}
